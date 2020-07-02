@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<p>Select how to save data</p>
+<form action="http://127.0.0.1:5000/csv" method=post enctype=multipart/form-data> <p class="mt-2">
+    <input type=submit value=CSV class="btn btn-secondary"></p>
+    
+</form>
+<form action="http://127.0.0.1:5000/sql" method=post enctype=multipart/form-data> <p class="mt-2">
+    <input type=submit value=SQL class="btn btn-secondary"></p>
+</form>
+<form action="http://127.0.0.1:5000/xlsx" method=post enctype=multipart/form-data> <p class="mt-2">
+    <input type=submit value=XLSX class="btn btn-secondary"></p>
+</form>
+<form action="http://127.0.0.1:5000/txt" method=post enctype=multipart/form-data> <p class="mt-2">
+    <input type=submit value=TXT class="btn btn-secondary"></p>
+</form>
+
+{% endblock %}
